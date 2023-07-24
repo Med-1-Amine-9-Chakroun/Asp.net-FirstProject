@@ -4,7 +4,7 @@ using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
 {
-    public class HelloworldController : Controller
+    public class HelloworldController : Controller 
     {
 
         private static List<dogviewmodel> dogs = new List<dogviewmodel>();
