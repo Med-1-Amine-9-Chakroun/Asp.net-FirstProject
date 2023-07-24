@@ -1,4 +1,4 @@
-﻿@model WebApplication1.Models.dogviewmodel
+﻿@model List<WebApplication1.Models.dogviewmodel>
 
 
 @*
@@ -9,5 +9,13 @@
 
 
 <p>This is the index page of the hello world controller</p>
-<h4>A dog name @Model.Name says hello</h4>
-<h4>@Model.Name is @Model.Age years old</h4>
+<ul>
+    @foreach(var dog in Model)
+    {
+        <li>@dog.Name (@dog.Age)</li>
+    }
+</ul>
+@*
+    <h4>A dog name @Model.Name says hello</h4>
+    <h4>@Model.Name is @Model.Age years old</h4>
+*@
